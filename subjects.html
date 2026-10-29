@@ -6,47 +6,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>المواد الدراسية | المتفوقين</title>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f3f6ff;color:#102b55}
-header{background:linear-gradient(120deg,#061735,#174c91);color:white;padding:25px 6%;border-bottom:4px solid #e8b947}
-header h1{color:#ffd36a;margin:0 0 8px}
-header p{margin:0}
-main{padding:30px 6%;max-width:1000px;margin:auto}
-h2{color:#102f64;text-align:center}
-.intro{text-align:center;color:#64748b;margin-bottom:25px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card{padding:22px;border-radius:17px;color:white;text-decoration:none;box-shadow:0 7px 18px #102b5520;transition:.2s}
-.card:hover{transform:translateY(-4px)}
-.card h3{margin:8px 0}
-.card p{font-size:13px;margin:0;color:#ffffffdd}
-.blue{background:linear-gradient(135deg,#1554a0,#071b40)}
-.purple{background:linear-gradient(135deg,#8446ad,#42236d)}
-.teal{background:linear-gradient(135deg,#18a99d,#075a70)}
-.orange{background:linear-gradient(135deg,#ed9d29,#a94c18)}
-.red{background:linear-gradient(135deg,#ee705c,#a52d43)}
-footer{text-align:center;padding:25px;background:#061735;color:#ffd36a;margin-top:35px}
-.back{display:inline-block;margin-top:25px;color:#174c91;font-weight:bold}
+body{margin:0;font-family:'Cairo',sans-serif;background:#f4f6fc;color:#17264b}
+header{background:linear-gradient(120deg,#101d45,#234a91);color:white;text-align:center;padding:35px 15px}
+header h1{margin:0;font-size:32px}
+header p{color:#f2d78b;margin:8px 0 0}
+main{max-width:1000px;margin:30px auto;padding:0 16px}
+h2{color:#17336b;margin-top:30px;border-right:5px solid #d5a83e;padding-right:12px}
+.intro{text-align:center;color:#66718a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px}
+.card{background:white;padding:20px;border-radius:16px;text-align:center;text-decoration:none;color:#17264b;border:1px solid #e4e8f1;box-shadow:0 5px 15px #17264b0d;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:#d5a83e}
+.card strong{display:block;font-size:19px}
+.card span{font-size:13px;color:#7b8499}
+.common{border-top:5px solid #d5a83e}
+.science{border-top:5px solid #299b91}
+.math{border-top:5px solid #3977cf}
+.literary{border-top:5px solid #a16bc4}
+footer{text-align:center;padding:25px;color:#7b8499}
+.back{display:inline-block;margin-top:25px;color:#234a91;text-decoration:none;font-weight:bold}
 </style>
 </head>
 <body>
 <header>
 <h1>🎓 المتفوقين</h1>
-<p>تالتة ثانوي 2027 — هدفنا التفوق وليس مجرد نجاح</p>
+<p>هدفنا التفوق وليس مجرد نجاح</p>
 </header>
-<main>
-<h2>📚 اختاري المادة الدراسية</h2>
-<p class="intro">ابدئي رحلتك، واختاري المادة التي تريدين مذاكرتها.</p>
-<div class="grid">
-<a class="card blue" href="#"><h3>📖 اللغة العربية</h3><p>نحو وبلاغة وأدب وقراءة</p></a>
-<a class="card purple" href="#"><h3>🔤 اللغة الإنجليزية</h3><p>قواعد وقراءة وتدريبات</p></a>
-<a class="card teal" href="#"><h3>⚛️ الكيمياء</h3><p>دروس وأسئلة واختبارات</p></a>
-<a class="card orange" href="#"><h3>🧬 الأحياء</h3><p>شرح ومراجعة وتدريبات</p></a>
-<a class="card red" href="#"><h3>⚡ الفيزياء</h3><p>قوانين ومسائل وتطبيقات</p></a>
-<a class="card blue" href="#"><h3>➗ الرياضيات</h3><p>شرح ومسائل متنوعة</p></a>
-</div>
-<a class="back" href="index.html">← العودة إلى الصفحة الرئيسية</a>
-</main>
-<footer>المتفوقين © 2026</footer>
-</body>
-</html> 
 
+<main>
+<h2>📚 المواد المشتركة</h2>
+<p class="intro">المواد الموجودة في الشعب المختلفة</p>
+<div class="grid">
+<a class="card common" href="#"><strong>اللغة العربية</strong><span>المادة المشتركة</span></a>
+<a class="card common" href="#"><strong>اللغة الأجنبية الأولى</strong><span>المادة المشتركة</span></a>
+</div>
+
+<h2>🔬 شعبة علمي علوم</h2>
+<div class="grid">
+<a class="card science" href="#"><strong>الأحياء</strong><span>علمي علوم</span></a>
+<a class="card science" href="#"><strong>الكيمياء</strong><span>علمي علوم</span></a>
+<a class="card science" href="#"><strong>الفيزياء</strong><span>علمي علوم</span></a>
+</div>
+
+<h2>📐 شعبة علمي رياضة</h2>
+<div class="grid">
+<a class="card math" href="#"><strong>الرياضيات</strong><span>علمي رياضة</span></a>
+<a class="card math" href="#"><strong>الكيمياء</strong><span>علمي رياضة</span></a>
+<a class="card math" href="#"><strong>الفيزياء</strong><span>علمي رياضة</span></a>
+</div>
+
+<h2>📖 الشعبة الأدبية</h2>
+<div class="grid">
+<a class="card literary" href="#"><strong>التاريخ</strong><span>أدبي</span></a>
+<a class="card literary" href="#"><strong>الجغرافيا</strong><span>أدبي</span></a>
+<a class="card literary" href="#"><strong>الإحصاء</strong><span>أدبي</span></a>
+</div>
+
+<center>
+<a class="back" href="index.html">← العودة إلى الصفحة الرئيسية</a>
+</center>
+</main>
+
+<footer>© المتفوقين 2027 — هدفنا التفوق وليس مجرد نجاح</footer>
+</body>
+</html>  
