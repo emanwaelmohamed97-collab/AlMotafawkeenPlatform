@@ -7,101 +7,68 @@
 <title>المتفوقين | منصتك التعليمية</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root {
-  --navy:#061b40;
-  --blue:#0b3978;
-  --gold:#ffc94d;
-  --light:#f5f8ff;
+:root{
+--navy:#061735;--blue:#174c91;--gold:#ffd36a;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{
-  font-family:'Cairo',sans-serif;
-  background:#f6f8fd;color:#102b55;
-}
+body{font-family:Cairo,Arial,sans-serif;background:#f5f7ff;color:#102b55}
 a{text-decoration:none;color:inherit}
 header{
-  background:linear-gradient(110deg,#04132f,#0b3978,#061b40);
-  color:white;padding:14px 5%;
-  display:flex;align-items:center;justify-content:space-between;
-  gap:18px;flex-wrap:wrap;border-bottom:2px solid var(--gold);
+background:linear-gradient(110deg,#04132f,#174c91,#061b40);
+color:white;padding:15px 5%;display:flex;align-items:center;
+justify-content:space-between;gap:16px;flex-wrap:wrap;
+border-bottom:3px solid #e8b947
 }
 .logo{font-size:25px;font-weight:900;color:var(--gold)}
 .logo span{display:block;color:white;font-size:11px;font-weight:500}
-nav{display:flex;gap:20px;flex-wrap:wrap}
-nav a{font-size:13px;font-weight:700;transition:.2s}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{font-size:13px;font-weight:700}
 nav a:hover{color:var(--gold)}
-.account{display:flex;gap:9px}
 .btn{
-  display:inline-block;padding:10px 20px;border-radius:30px;
-  font-family:inherit;font-weight:800;font-size:13px;
-  background:linear-gradient(120deg,#ffe18a,#f5ae25);
-  color:#10264b;border:0;cursor:pointer;
+display:inline-block;padding:11px 23px;border-radius:30px;
+background:linear-gradient(120deg,#ffe49a,#f3b42e);
+color:#10264b;font-weight:900;font-size:13px
 }
 .btn-outline{background:transparent;border:1px solid var(--gold);color:white}
 .hero{
-  min-height:390px;padding:65px 8%;
-  display:flex;align-items:center;
-  background:
-  radial-gradient(ellipse at 15% 80%,#1766a5 0%,transparent 40%),
-  radial-gradient(ellipse at 85% 10%,#1d5595 0%,transparent 40%),
-  linear-gradient(115deg,#04152f,#0b3978 55%,#061b40);
-  color:white;position:relative;overflow:hidden;
+min-height:400px;padding:65px 8%;display:flex;align-items:center;
+background:
+radial-gradient(ellipse at 15% 80%,#1766a5,transparent 40%),
+radial-gradient(ellipse at 85% 10%,#1d5595,transparent 40%),
+linear-gradient(115deg,#04152f,#0b3978 55%,#061b40);
+color:white;position:relative;overflow:hidden
 }
-.hero:before,.hero:after{
-  content:"";position:absolute;border:2px solid #eebd4e;
-  width:250px;height:250px;border-radius:50%;opacity:.18;
-}
-.hero:before{top:-150px;right:-70px}
-.hero:after{bottom:-190px;left:8%}
 .hero-content{max-width:650px;position:relative;z-index:1}
 .eyebrow{color:#ffdb80;font-weight:800;margin-bottom:12px}
-.hero h1{font-size:clamp(36px,6vw,65px);line-height:1.35;font-weight:900}
-.hero h1 span{
-  color:#ffd36a;
-  text-shadow:0 4px 20px #e8a82c66;
-}
-.hero p{font-size:16px;line-height:2.1;margin:14px 0 24px;color:#e1eaff}
+.hero h1{font-size:clamp(36px,6vw,65px);line-height:1.4;font-weight:900}
+.hero h1 span{color:#ffd36a}
+.hero p{font-size:15px;line-height:2.1;margin:14px 0 25px;color:#e1eaff}
 .hero .btn{padding:13px 30px;font-size:15px}
-.hero-decoration{
-  position:absolute;left:8%;bottom:30px;font-size:95px;
-  opacity:.18;transform:rotate(-12deg)
-}
+.decoration{position:absolute;left:8%;bottom:25px;font-size:90px;opacity:.18}
 .section{padding:55px 6%}
 .section-title{text-align:center;margin-bottom:30px}
 .section-title h2{font-size:27px;color:var(--navy);font-weight:900}
 .section-title p{color:#71819e;font-size:14px;margin-top:5px}
-.features{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:17px
-}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
 .feature{
-  background:white;padding:23px 14px;border-radius:18px;
-  text-align:center;box-shadow:0 8px 25px #102b5510;
-  border-bottom:3px solid var(--gold);transition:.25s
+background:white;padding:23px 14px;border-radius:18px;text-align:center;
+box-shadow:0 8px 25px #102b5510;border-bottom:3px solid var(--gold)
 }
-.feature:hover{transform:translateY(-6px)}
 .feature .icon{font-size:34px;margin-bottom:8px}
 .feature h3{font-size:16px;color:var(--navy)}
 .feature p{font-size:12px;color:#75839b;margin-top:6px}
 .subjects-section{
-  background:
-  radial-gradient(ellipse at top left,#fff0cc 0%,transparent 35%),
-  linear-gradient(135deg,#eaf1ff,#fff 55%,#f8edda);
+background:radial-gradient(ellipse at top left,#fff0cc,transparent 35%),
+linear-gradient(135deg,#eaf1ff,#fff 55%,#f8edda)
 }
-.subjects{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:18px
-}
+.subjects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .subject{
-  min-height:165px;border-radius:19px;padding:24px 18px;
-  color:white;position:relative;overflow:hidden;
-  box-shadow:0 9px 20px #071a3820;transition:.25s;
+min-height:165px;border-radius:19px;padding:24px 18px;color:white;
+position:relative;overflow:hidden;box-shadow:0 9px 20px #071a3820;
+transition:.2s
 }
-.subject:hover{transform:translateY(-6px) scale(1.01)}
-.subject:after{
-  content:"";position:absolute;width:130px;height:130px;
-  border:1px solid #ffffff55;border-radius:50%;
-  left:-40px;bottom:-75px
-}
+.subject:hover{transform:translateY(-5px)}
 .subject .icon{font-size:34px}
 .subject h3{font-size:19px;margin:7px 0}
 .subject p{font-size:12px;color:#ffffffdf}
@@ -112,149 +79,95 @@ nav a:hover{color:var(--gold)}
 .s5{background:linear-gradient(135deg,#e8a629,#a75d12)}
 .s6{background:linear-gradient(135deg,#5369d9,#25358b)}
 .challenge{
-  margin:35px 6%;padding:35px 25px;border-radius:22px;
-  background:
-  radial-gradient(circle at 10% 90%,#174c91,transparent 35%),
-  linear-gradient(110deg,#061630,#0b3978,#061630);
-  color:white;text-align:center;border:1px solid #e9b743;
-  box-shadow:0 12px 30px #061b4020;
+margin:35px 6%;padding:35px 25px;border-radius:22px;
+background:radial-gradient(circle at 10% 90%,#174c91,transparent 35%),
+linear-gradient(110deg,#061630,#0b3978,#061630);
+color:white;text-align:center;border:1px solid #e9b743
 }
 .challenge h2{color:#ffd36a;font-size:25px}
 .challenge p{margin:10px auto 20px;line-height:2;color:#e6edff}
-footer{
-  background:#04142f;color:white;text-align:center;
-  padding:28px 15px;border-top:3px solid #dba936
-}
+footer{background:#04142f;color:white;text-align:center;padding:28px 15px;border-top:3px solid #dba936}
 footer strong{color:var(--gold);font-size:22px}
 footer p{font-size:12px;color:#c5d1e7;margin-top:8px}
 @media(max-width:750px){
-  header{justify-content:center;text-align:center}
-  nav{justify-content:center;gap:13px}
-  .account{justify-content:center}
-  .hero{padding:55px 7%;min-height:350px}
-  .hero-decoration{font-size:65px;left:3%}
-  .features{grid-template-columns:repeat(2,1fr)}
-  .subjects{grid-template-columns:repeat(2,1fr);gap:12px}
-  .subject{padding:17px 13px;min-height:150px}
-  .section{padding:40px 5%}
+header{justify-content:center;text-align:center}
+nav{justify-content:center;gap:13px}
+.hero{padding:55px 7%;min-height:350px}
+.features{grid-template-columns:repeat(2,1fr)}
+.subjects{grid-template-columns:repeat(2,1fr);gap:12px}
+.subject{padding:17px 13px;min-height:150px}
+.section{padding:40px 5%}
 }
 @media(max-width:390px){
-  .subjects{grid-template-columns:1fr}
-  nav a{font-size:12px}
+.subjects{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">🎓 المتفوقين
-    <span>منصتك التعليمية</span>
-  </div>
-  <nav>
-    <a href="#home">الرئيسية</a>
-    <a href="#features">مميزاتنا</a>
-    <a href="#subjects">المواد الدراسية</a>
-    <a href="#challenge">التحديات</a>
-  </nav>
-  <div class="account">
-    <a class="btn btn-outline" href="#home">إنشاء حساب ＋</a>
-    <a class="btn" href="#home">تسجيل الدخول</a>
-  </div>
+<div class="logo">🎓 المتفوقين
+<span>منصتك التعليمية</span>
+</div>
+<nav>
+<a href="#home">الرئيسية</a>
+<a href="#features">مميزاتنا</a>
+<a href="subjects.html">المواد الدراسية</a>
+<a href="#challenge">التحديات</a>
+</nav>
+<a class="btn btn-outline" href="subjects.html">ابدأ الآن ←</a>
 </header>
 
 <section class="hero" id="home">
-  <div class="hero-content">
-    <div class="eyebrow">✨ رحلتك نحو التفوق تبدأ هنا</div>
-    <h1>أهلًا بك في<br><span>المتفوقين</span></h1>
-    <p>هدفنا التفوق وليس مجرد نجاح.<br>
-    منصة تعليمية متكاملة تساعدك على تطوير مستواك الدراسي
-    من خلال الدروس والاختبارات والتحديات المشوقة.</p>
-    <a href="#subjects" class="btn">ابدأ رحلتك الآن ←</a>
-  </div>
-  <div class="hero-decoration">🎓</div>
+<div class="hero-content">
+<div class="eyebrow">✨ رحلتك نحو التفوق تبدأ هنا</div>
+<h1>أهلًا بك في<br><span>المتفوقين</span></h1>
+<p>هدفنا التفوق وليس مجرد نجاح.<br>
+منصة تعليمية تساعدك على تطوير مستواك من خلال الدروس والاختبارات والتحديات.</p>
+<a href="subjects.html" class="btn">ابدأ رحلتك الآن ←</a>
+</div>
+<div class="decoration">🎓</div>
 </section>
 
 <section class="section" id="features">
-  <div class="section-title">
-    <h2>⭐ مميزات المنصة</h2>
-    <p>كل ما تحتاجه في مكان واحد لتكون من المتفوقين</p>
-  </div>
-  <div class="features">
-    <div class="feature">
-      <div class="icon">📚</div>
-      <h3>المحتوى التعليمي</h3>
-      <p>دروس ومراجعات مبسطة وشاملة</p>
-    </div>
-    <div class="feature">
-      <div class="icon">📝</div>
-      <h3>الاختبارات</h3>
-      <p>اختبر معلوماتك وتابع مستواك</p>
-    </div>
-    <div class="feature">
-      <div class="icon">🏆</div>
-      <h3>التحديات</h3>
-      <p>شارك في التحديات ونافس نفسك</p>
-    </div>
-    <div class="feature">
-      <div class="icon">📊</div>
-      <h3>الإنجازات</h3>
-      <p>تابع تقدمك وحقق أهدافك</p>
-    </div>
-  </div>
+<div class="section-title">
+<h2>⭐ مميزات المنصة</h2>
+<p>كل ما تحتاجه في مكان واحد لتكون من المتفوقين</p>
+</div>
+<div class="features">
+<div class="feature"><div class="icon">📚</div><h3>المحتوى التعليمي</h3><p>دروس ومراجعات مبسطة</p></div>
+<div class="feature"><div class="icon">📝</div><h3>الاختبارات</h3><p>اختبر معلوماتك وتابع مستواك</p></div>
+<div class="feature"><div class="icon">🏆</div><h3>التحديات</h3><p>شارك ونافس نفسك</p></div>
+<div class="feature"><div class="icon">📊</div><h3>الإنجازات</h3><p>تابع تقدمك وحقق أهدافك</p></div>
+</div>
 </section>
 
 <section class="section subjects-section" id="subjects">
-  <div class="section-title">
-    <h2>📖 الأقسام التعليمية</h2>
-    <p>اختر القسم الذي تريد البدء فيه</p>
-  </div>
-  <div class="subjects">
-    <a href="#" class="subject s1">
-      <div class="icon">📖</div>
-      <h3>اللغة العربية</h3>
-      <p>قواعد وقراءة وتدريبات</p>
-    </a>
-    <a href="#" class="subject s2">
-      <div class="icon">🔤</div>
-      <h3>اللغة الإنجليزية</h3>
-      <p>مراجعات وقراءة وتدريبات</p>
-    </a>
-    <a href="#" class="subject s3">
-      <div class="icon">⚛️</div>
-      <h3>العلوم</h3>
-      <p>مفاهيم وتدريبات علمية</p>
-    </a>
-    <a href="#" class="subject s4">
-      <div class="icon">🧮</div>
-      <h3>الرياضيات</h3>
-      <p>شرح وتطبيق ومسائل</p>
-    </a>
-    <a href="#" class="subject s5">
-      <div class="icon">👥</div>
-      <h3>المواد المشتركة</h3>
-      <p>محتوى يناسب جميع الطلاب</p>
-    </a>
-    <a href="#" class="subject s6">
-      <div class="icon">🪶</div>
-      <h3>المواد الأدبية</h3>
-      <p>مراجعات وأسئلة متنوعة</p>
-    </a>
-  </div>
+<div class="section-title">
+<h2>📖 الأقسام التعليمية</h2>
+<p>اختاري القسم الذي تريدين البدء فيه</p>
+</div>
+<div class="subjects">
+<a href="subjects.html" class="subject s1"><div class="icon">📖</div><h3>اللغة العربية</h3><p>قواعد وقراءة وتدريبات</p></a>
+<a href="subjects.html" class="subject s2"><div class="icon">🔤</div><h3>اللغة الإنجليزية</h3><p>قواعد وقراءة وتدريبات</p></a>
+<a href="subjects.html" class="subject s3"><div class="icon">⚛️</div><h3>الكيمياء</h3><p>دروس وأسئلة واختبارات</p></a>
+<a href="subjects.html" class="subject s4"><div class="icon">🧬</div><h3>الأحياء</h3><p>شرح ومراجعة وتدريبات</p></a>
+<a href="subjects.html" class="subject s5"><div class="icon">⚡</div><h3>الفيزياء</h3><p>قوانين ومسائل وتطبيقات</p></a>
+<a href="subjects.html" class="subject s6"><div class="icon">➗</div><h3>الرياضيات</h3><p>شرح ومسائل متنوعة</p></a>
+</div>
 </section>
 
 <section class="challenge" id="challenge">
-  <h2>🏆 هل أنت مستعد للتحدي؟</h2>
-  <p>التفوق ليس خطوة واحدة، بل مجموعة من المحاولات والإنجازات اليومية.<br>
-  ابدأ اليوم، واجعل كل يوم فرصة جديدة للتقدم.</p>
-  <a href="#subjects" class="btn">انطلق نحو التفوق ←</a>
+<h2>🏆 هل أنت مستعد للتحدي؟</h2>
+<p>التفوق ليس خطوة واحدة، بل مجموعة من المحاولات والإنجازات اليومية.<br>
+ابدأ اليوم، واجعل كل يوم فرصة جديدة للتقدم.</p>
+<a href="subjects.html" class="btn">انطلق نحو التفوق ←</a>
 </section>
 
 <footer>
-  <strong>🎓 المتفوقين</strong>
-  <p>هدفنا التفوق وليس مجرد نجاح</p>
-  <p>جميع الحقوق محفوظة © 2026</p>
+<strong>🎓 المتفوقين</strong>
+<p>هدفنا التفوق وليس مجرد نجاح</p>
+<p>جميع الحقوق محفوظة © 2026</p>
 </footer>
-
 </body>
 </html>  
- 
